@@ -1,86 +1,7 @@
 # Moduleur community patch workspace
 
 This repository contains reproducible Shmoergh Moduleur patches, a Codex skill
-for creating them, and scripts for maintaining local copies of official source
-code, firmware, and patch sheets.
-
-## Contents
-
-- `patches/` — editable patch definitions, vector overlays, and finished PDFs.
-- `.agents/skills/moduleur-patches/` — repository-scoped patch-authoring skill.
-- `downloads/` — shared instructions and refresh script; downloaded files stay local.
-- `upstream/` — shared instructions and refresh script; official Git clones stay local.
-
-```text
-moduleur/
-├── README.md
-├── .gitignore
-├── .agents/skills/moduleur-patches/
-├── patches/
-├── downloads/
-│   ├── README.md                 # Shared
-│   ├── refresh.sh                # Shared
-│   ├── firmware/                 # Local, ignored
-│   ├── patchsheets/              # Local, ignored
-│   ├── history/                  # Local, ignored; created on changes
-│   └── …                        # Local manifests, checksums, change log
-└── upstream/
-    ├── README.md                 # Shared
-    ├── refresh.sh                # Shared
-    └── <official-repository>/    # Local, ignored independent Git clones
-```
-
-## Set up and refresh local resources
-
-From this repository's root, download the currently linked official firmware
-and patch sheets:
-
-```sh
-./downloads/refresh.sh
-./downloads/refresh.sh --verify
-```
-
-Current files live directly under `downloads/firmware/` and
-`downloads/patchsheets/`. Unchanged refreshes create no snapshots. Replaced file
-contents are archived by content hash, and actual changes are logged. Files no longer linked upstream remain in place; refresh never prunes them.
-See [downloads instructions](downloads/README.md) for sources and details.
-
-Clone the desired official [Shmoergh repositories](https://github.com/shmoergh)
-into `upstream/`, following the [upstream instructions](upstream/README.md).
-This workspace uses all the listed official repositories except `hog`.
-These are independent clones, not submodules or copies tracked in this repository.
-For example:
-
-```sh
-git clone https://github.com/shmoergh/brain-sdk.git upstream/brain-sdk
-./upstream/refresh.sh
-```
-
-The upstream refresh script updates existing clones only; it does not create
-missing clones. It skips local changes and uses fast-forward-only pulls.
-The scripts locate their data folders relative to their own paths, so they can
-also be invoked from another working directory. They require Git for upstream
-updates, and standard shell utilities, curl, unzip, and a SHA-256 tool for downloads,
-plus network access. Python is not required. Use a POSIX shell on macOS/Linux,
-or Git Bash/WSL on Windows; see [platform requirements](downloads/README.md#platform-requirements).
-
-## What belongs in Git
-
-Share the patch skill, patch definitions and generated patch PDFs/overlays, plus
-resource-management scripts and documentation. Within `downloads/`
-and `upstream/`, `.gitignore` allows only each folder's `README.md` and
-`refresh.sh`. Downloaded firmware, generated metadata, history, temporary files,
-and upstream repositories remain local. Common firmware and archive extensions
-are also ignored throughout this repository.
-
-Do not force-add ignored material. Git ignore rules prevent ordinary additions,
-but cannot prevent `git add -f` or untrack files already committed. Review
-`git status` before committing.
-
-Keep private account information and credentials outside this repository.
-Publishing a repository exposes its history as well as current files. The local
-resource folders require their own backup; pushing this repository does not
-back up their contents. Downloading firmware does not install it on an instrument.
+for creating them, and small tools for keeping local copies of official resources.
 
 ## Included patch
 
@@ -91,6 +12,54 @@ editable JSON definition, vector overlay, PDF overlay, and finished two-page PDF
 ## Patch-authoring skill
 
 The repository-scoped [Moduleur patch skill](.agents/skills/moduleur-patches/SKILL.md)
-contains the authoring workflow, format reference, panel map, renderer, and its
-small Python requirements file. Codex discovers repository skills under
-`.agents/skills/` when working inside this repository.
+contains the authoring workflow, format reference, panel map, renderer, and Python
+requirements. Codex discovers it automatically under `.agents/skills/` when
+working inside this repository.
+
+The skill records every active cable and internal normal, every critical control
+position, and the Brain firmware and mode. It generates a compact vector overlay
+and a two-page PDF using the minimal style by default. Additional presentation
+styles are available through the renderer's `--style` option.
+
+## Repository layout
+
+```text
+moduleur/
+├── .agents/skills/moduleur-patches/   # Shared patch-authoring skill
+├── patches/                           # Definitions, overlays, and finished PDFs
+├── downloads/                         # Local firmware and patch sheets
+└── upstream/                          # Local official source clones
+```
+
+## Local Shmoergh resources
+
+Download the currently linked firmware and patch sheets, or verify the existing
+collection:
+
+```sh
+./downloads/refresh.sh
+./downloads/refresh.sh --verify
+```
+
+See [downloads/README.md](downloads/README.md) for supported platforms, source
+URLs, preservation behavior, and recovery details. Existing files are retained
+when the Shmoergh site is unavailable.
+
+Official source repositories can be refreshed with:
+
+```sh
+./upstream/refresh.sh
+```
+
+See [upstream/README.md](upstream/README.md) for the repository list and refresh
+behavior. The `hog` repository is intentionally excluded.
+
+## What belongs in Git
+
+Patch definitions, generated overlays and PDFs, the patch skill, and maintenance
+documentation belong in Git. Downloaded firmware, patch-sheet source files,
+history, generated metadata, private notes, and upstream clones stay local and
+are covered by `.gitignore`.
+
+Do not force-add ignored material. Review `git status` before committing because
+publishing a repository exposes its history as well as its current files.
