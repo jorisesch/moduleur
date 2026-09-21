@@ -1,0 +1,34 @@
+.DS_Store
+
+# Private/local working material is outside the public repository.
+/notes/
+/assets/
+/references/
+/tmp/
+
+# Share only documentation and refresh scripts from these local data folders.
+# New downloads, firmware, manifests, history, and upstream clones stay local.
+/downloads/*
+!/downloads/README.md
+!/downloads/refresh.sh
+/upstream/*
+!/upstream/README.md
+!/upstream/refresh.sh
+
+# Firmware binaries and release archives must not enter the notes repository.
+*.uf2
+*.bin
+*.hex
+*.elf
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# Local Python environments and renderer scratch files; patch outputs are shared.
+.venv/
+__pycache__/
+*.pyc
+/patches/.preview/
+/patches/*/patch-*.pdf

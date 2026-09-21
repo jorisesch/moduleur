@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "id": "alien-thunder",
+  "title": "Alien Thunder",
+  "revision": "1",
+  "status": "auditioned",
+  "summary": "Noise cracks over a low, metallic oscillator rumble, then decays through a slowly moving resonant filter like thunder from an unfamiliar atmosphere.",
+  "brain": {
+    "firmware": "Le Controlleur",
+    "version": "v1.4 (target; confirm installed)",
+    "mode": "Sequencer",
+    "layout": "three-knobs-two-buttons",
+    "settings": [
+      "X/Y/Z are upper knobs left to right; A/B are lower buttons. Press A to run.",
+      "X: 15% (about 87 BPM); keep above minimum because minimum selects external sync.",
+      "Z: 35% randomness for changing gaps. Y and both pitch CV outputs are unused; PULSE supplies 20 ms gates."
+    ]
+  },
+  "description": {
+    "sound": [
+      "A noise impact decays over low oscillators. Audio-rate FM adds a metallic undertone and slow filter motion changes its apparent distance. Cutoff at 60% was confirmed; other values are starting points."
+    ],
+    "setup": [
+      "Make the five numbered connections. Six dashed routes are built in; the headphone lead is separate. Select Sequencer mode, keep X above minimum, press A, and begin with output volume low.",
+      "VCO 2's middle output must produce noise. If it produces a sub-oscillator, its internal selector is configured for SUB."
+    ],
+    "play": [
+      "Decay controls the body and release the distant tail. Brain tempo/randomness set storm spacing; cutoff controls distance; LFO RATE adds atmospheric motion."
+    ],
+    "variations": [
+      "Remove cable 5 for natural thunder. Mixer 3 controls crack versus rumble. Raise resonance cautiously for a pitched sci-fi ring."
+    ]
+  },
+  "normalled_policy": "N1-N6 retain the built-in oscillator-to-mixer, mixer-to-filter, filter-to-VCA 1, ENV 1-to-control, and VCA 1-to-output chain. Cables add noise, gate, two filter modulations, and FM. Mixer IN4 is silenced.",
+  "external": {
+    "external.headphones": {
+      "label": "Stereo headphones",
+      "direction": "in",
+      "x": 522,
+      "y": 852
+    }
+  },
+  "connections": [
+    {"id": "1", "from": "vco2.noise", "to": "mixer.in3", "kind": "cable", "signal": "audio", "via": [[294.9, 452], [522, 452]], "label_at": [410, 452]},
+    {"id": "2", "from": "brain.pulse", "to": "env1.gate", "kind": "cable", "signal": "gate", "via": [[704, 832], [51, 832], [51, 703.5]], "label_at": [380, 832]},
+    {"id": "3", "from": "env1.env", "to": "filter.cv1", "kind": "cable", "signal": "cv", "via": [[184, 703.5], [184, 475], [658.5, 475], [658.5, 340.4]], "label_at": [420, 475]},
+    {"id": "4", "from": "lfo.triangle", "to": "filter.cv2", "kind": "cable", "signal": "cv", "via": [[476.5, 808], [750, 808], [750, 319], [704, 319]], "label_at": [750, 590]},
+    {"id": "5", "from": "vco1.out", "to": "vco2.fm", "kind": "cable", "signal": "audio", "via": [[158.8, 430], [294.9, 430]], "label_at": [225, 430]},
+    {"id": "6", "from": "output.out", "to": "external.headphones", "kind": "cable", "signal": "audio", "label_at": [522, 836]},
+    {"id": "N1", "from": "vco1.out", "to": "mixer.in1", "kind": "normal", "signal": "audio", "via": [[158.8, 443], [431, 443]], "label_at": [285, 443]},
+    {"id": "N2", "from": "vco2.out", "to": "mixer.in2", "kind": "normal", "signal": "audio", "via": [[340.2, 423], [476.5, 423]], "label_at": [407, 423]},
+    {"id": "N3", "from": "mixer.out", "to": "filter.lp", "kind": "normal", "signal": "audio", "via": [[560, 249.7], [560, 454], [590, 454], [590, 408.5]], "label_at": [560, 390]},
+    {"id": "N4", "from": "filter.out", "to": "env1.in", "kind": "normal", "signal": "audio", "via": [[733, 408.5], [733, 816], [80, 816], [80, 771.5]], "label_at": [733, 675]},
+    {"id": "N5", "from": "env1.env", "to": "env1.control", "kind": "normal", "signal": "cv", "label_at": [113.5, 738]},
+    {"id": "N6", "from": "env1.out", "to": "output.in", "kind": "normal", "signal": "audio", "via": [[158.8, 790], [546, 790], [546, 703.5]], "label_at": [395, 790]}
+  ],
+  "controls": {
+    "vco1.wave": {"value": "SAW", "critical": true},
+    "vco1.octave": {"position": 0.15, "value": "15%", "critical": true},
+    "vco1.fine": {"position": 0.48, "value": "48%", "critical": true},
+    "vco1.width": {"irrelevant": "Saw selected; pulse width does not affect this waveform."},
+    "vco2.wave": {"value": "SAW", "critical": true},
+    "vco2.octave": {"position": 0.22, "value": "22%", "critical": true},
+    "vco2.fine": {"position": 0.56, "value": "56%", "critical": true},
+    "vco2.width": {"irrelevant": "Saw selected; pulse width does not affect this waveform."},
+    "mixer.level1": {"position": 0.25, "value": "25%", "critical": true},
+    "mixer.level2": {"position": 0.3, "value": "30%", "critical": true},
+    "mixer.level3": {"position": 0.65, "value": "65%", "critical": true},
+    "mixer.level4": {"position": 0, "value": "0%; unused", "critical": true},
+    "mixer.gain4": {"irrelevant": "Mixer input 4 is unused and its level is zero."},
+    "mixer.main": {"position": 0.5, "value": "50%", "critical": true},
+    "mixer.threshold": {"irrelevant": "No signal enters sidechain input 4, so compression is inactive."},
+    "filter.resonance": {"position": 0.45, "value": "45%", "critical": true},
+    "filter.cutoff": {"position": 0.6, "value": "60%", "critical": true},
+    "filter.cv1": {"position": 0.7, "value": "70%", "critical": true},
+    "filter.cv2": {"position": 0.58, "value": "58%", "critical": true},
+    "env1.attack": {"position": 0, "value": "minimum", "critical": true},
+    "env1.decay": {"position": 0.65, "value": "65%", "critical": true},
+    "env1.sustain": {"position": 0, "value": "0%", "critical": true},
+    "env1.release": {"position": 0.75, "value": "75%", "critical": true},
+    "lfo.rate": {"position": 0.08, "value": "8%", "critical": true},
+    "lfo.amount": {"position": 0.7, "value": "70%", "critical": true},
+    "output.volume": {"position": 0.08, "value": "8%; low", "critical": true},
+    "output.drive": {"position": 0.2, "value": "20%", "critical": true},
+    "brain.x": {"position": 0.15, "value": "15%", "critical": true},
+    "brain.y": {"irrelevant": "Octave range affects unused pitch CV outputs, not PULSE."},
+    "brain.z": {"position": 0.35, "value": "35%", "critical": true}
+  },
+  "sources": [
+    "Firmware: upstream/le-controlleur/SEQUENCER.md (target download v1.4; installed version unconfirmed)",
+    "Instrument and modules: shmoergh.com/guides/moduleur-user-guide/; upstream/moduleur/modules/",
+    "Default wiring and background: upstream/moduleur/modules/08-default-patch/schematics/default-patch.pdf; shmoergh.com/content/files/2026/02/moduleur-patch-sheet.pdf"
+  ]
+}
