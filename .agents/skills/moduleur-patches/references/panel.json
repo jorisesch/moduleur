@@ -1,0 +1,608 @@
+{
+  "template": {
+    "sha256": "43b75621de601e0b2591ecd3a164dc7301d64ab3b9985eb0d847a42dff807ffd",
+    "width": 771.024,
+    "height": 952.441,
+    "source": "https://www.shmoergh.com/content/files/2026/02/moduleur-patch-sheet.pdf"
+  },
+  "ports": {
+    "vco1.sync": {
+      "x": 68,
+      "y": 340.4,
+      "direction": "in",
+      "label": "VCO 1 SYNC",
+      "module": "vco1"
+    },
+    "vco1.fm": {
+      "x": 113.5,
+      "y": 340.4,
+      "direction": "in",
+      "label": "VCO 1 FM",
+      "module": "vco1"
+    },
+    "vco1.pwm": {
+      "x": 158.8,
+      "y": 340.4,
+      "direction": "in",
+      "label": "VCO 1 PWM",
+      "module": "vco1"
+    },
+    "vco1.pitch": {
+      "x": 68,
+      "y": 408.5,
+      "direction": "in",
+      "label": "VCO 1 PITCH",
+      "module": "vco1"
+    },
+    "vco1.sub": {
+      "x": 113.5,
+      "y": 408.5,
+      "direction": "out",
+      "label": "VCO 1 SUB",
+      "module": "vco1"
+    },
+    "vco1.out": {
+      "x": 158.8,
+      "y": 408.5,
+      "direction": "out",
+      "label": "VCO 1 OUT",
+      "module": "vco1"
+    },
+    "vco2.sync": {
+      "x": 249.4,
+      "y": 340.4,
+      "direction": "in",
+      "label": "VCO 2 SYNC",
+      "module": "vco2"
+    },
+    "vco2.fm": {
+      "x": 294.9,
+      "y": 340.4,
+      "direction": "in",
+      "label": "VCO 2 FM",
+      "module": "vco2"
+    },
+    "vco2.pwm": {
+      "x": 340.20000000000005,
+      "y": 340.4,
+      "direction": "in",
+      "label": "VCO 2 PWM",
+      "module": "vco2"
+    },
+    "vco2.pitch": {
+      "x": 249.4,
+      "y": 408.5,
+      "direction": "in",
+      "label": "VCO 2 PITCH",
+      "module": "vco2"
+    },
+    "vco2.noise": {
+      "x": 294.9,
+      "y": 408.5,
+      "direction": "out",
+      "label": "VCO 2 NOISE",
+      "module": "vco2"
+    },
+    "vco2.out": {
+      "x": 340.20000000000005,
+      "y": 408.5,
+      "direction": "out",
+      "label": "VCO 2 OUT",
+      "module": "vco2"
+    },
+    "mixer.in1": {
+      "x": 431,
+      "y": 408.5,
+      "direction": "in",
+      "label": "Mixer IN1",
+      "module": "mixer"
+    },
+    "mixer.in2": {
+      "x": 476.5,
+      "y": 408.5,
+      "direction": "in",
+      "label": "Mixer IN2",
+      "module": "mixer"
+    },
+    "mixer.in3": {
+      "x": 522,
+      "y": 408.5,
+      "direction": "in",
+      "label": "Mixer IN3",
+      "module": "mixer"
+    },
+    "mixer.in4": {
+      "x": 431,
+      "y": 249.7,
+      "direction": "in",
+      "label": "Mixer IN4",
+      "module": "mixer"
+    },
+    "mixer.out": {
+      "x": 522,
+      "y": 249.7,
+      "direction": "out",
+      "label": "Mixer OUT",
+      "module": "mixer"
+    },
+    "filter.hp": {
+      "x": 613,
+      "y": 340.4,
+      "direction": "in",
+      "label": "Filter HP",
+      "module": "filter"
+    },
+    "filter.cv1": {
+      "x": 658.5,
+      "y": 340.4,
+      "direction": "in",
+      "label": "Filter CV1",
+      "module": "filter"
+    },
+    "filter.cv2": {
+      "x": 704,
+      "y": 340.4,
+      "direction": "in",
+      "label": "Filter CV2",
+      "module": "filter"
+    },
+    "filter.lp": {
+      "x": 613,
+      "y": 408.5,
+      "direction": "in",
+      "label": "Filter LP",
+      "module": "filter"
+    },
+    "filter.out": {
+      "x": 704,
+      "y": 408.5,
+      "direction": "out",
+      "label": "Filter OUT",
+      "module": "filter"
+    },
+    "env1.gate": {
+      "x": 68,
+      "y": 703.5,
+      "direction": "in",
+      "label": "ENV/VCA 1 GATE",
+      "module": "env1"
+    },
+    "env1.env": {
+      "x": 113.5,
+      "y": 703.5,
+      "direction": "out",
+      "label": "ENV/VCA 1 ENV",
+      "module": "env1"
+    },
+    "env1.in": {
+      "x": 68,
+      "y": 771.5,
+      "direction": "in",
+      "label": "ENV/VCA 1 IN",
+      "module": "env1"
+    },
+    "env1.control": {
+      "x": 113.5,
+      "y": 771.5,
+      "direction": "in",
+      "label": "ENV/VCA 1 CONTROL",
+      "module": "env1"
+    },
+    "env1.out": {
+      "x": 158.8,
+      "y": 771.5,
+      "direction": "out",
+      "label": "ENV/VCA 1 OUT",
+      "module": "env1"
+    },
+    "env2.gate": {
+      "x": 249.4,
+      "y": 703.5,
+      "direction": "in",
+      "label": "ENV/VCA 2 GATE",
+      "module": "env2"
+    },
+    "env2.env": {
+      "x": 294.9,
+      "y": 703.5,
+      "direction": "out",
+      "label": "ENV/VCA 2 ENV",
+      "module": "env2"
+    },
+    "env2.in": {
+      "x": 249.4,
+      "y": 771.5,
+      "direction": "in",
+      "label": "ENV/VCA 2 IN",
+      "module": "env2"
+    },
+    "env2.control": {
+      "x": 294.9,
+      "y": 771.5,
+      "direction": "in",
+      "label": "ENV/VCA 2 CONTROL",
+      "module": "env2"
+    },
+    "env2.out": {
+      "x": 340.20000000000005,
+      "y": 771.5,
+      "direction": "out",
+      "label": "ENV/VCA 2 OUT",
+      "module": "env2"
+    },
+    "crush.trigger": {
+      "x": 431,
+      "y": 612.5,
+      "direction": "in",
+      "label": "CRUSH TRIGGER",
+      "module": "crush"
+    },
+    "crush.in": {
+      "x": 431,
+      "y": 703.5,
+      "direction": "in",
+      "label": "CRUSH IN",
+      "module": "crush"
+    },
+    "crush.out": {
+      "x": 431,
+      "y": 771.5,
+      "direction": "out",
+      "label": "CRUSH OUT",
+      "module": "crush"
+    },
+    "lfo.square": {
+      "x": 476.5,
+      "y": 703.5,
+      "direction": "out",
+      "label": "LFO SQUARE",
+      "module": "lfo"
+    },
+    "lfo.triangle": {
+      "x": 476.5,
+      "y": 771.5,
+      "direction": "out",
+      "label": "LFO TRIANGLE",
+      "module": "lfo"
+    },
+    "output.in": {
+      "x": 522,
+      "y": 703.5,
+      "direction": "in",
+      "label": "OUTPUT IN",
+      "module": "output"
+    },
+    "output.out": {
+      "x": 522,
+      "y": 771.5,
+      "direction": "out",
+      "label": "OUTPUT OUT",
+      "module": "output"
+    },
+    "brain.midi": {
+      "x": 704,
+      "y": 612.5,
+      "direction": "in",
+      "label": "Brain MIDI",
+      "module": "brain"
+    },
+    "brain.in1": {
+      "x": 613,
+      "y": 703.5,
+      "direction": "in",
+      "label": "Brain IN1",
+      "module": "brain"
+    },
+    "brain.in2": {
+      "x": 658.5,
+      "y": 703.5,
+      "direction": "in",
+      "label": "Brain IN2",
+      "module": "brain"
+    },
+    "brain.pulse_in": {
+      "x": 704,
+      "y": 703.5,
+      "direction": "in",
+      "label": "Brain PULSE_IN",
+      "module": "brain"
+    },
+    "brain.out1": {
+      "x": 613,
+      "y": 771.5,
+      "direction": "out",
+      "label": "Brain OUT1",
+      "module": "brain"
+    },
+    "brain.out2": {
+      "x": 658.5,
+      "y": 771.5,
+      "direction": "out",
+      "label": "Brain OUT2",
+      "module": "brain"
+    },
+    "brain.pulse": {
+      "x": 704,
+      "y": 771.5,
+      "direction": "out",
+      "label": "Brain PULSE",
+      "module": "brain"
+    }
+  },
+  "controls": {
+    "vco1.wave": {
+      "x": 79.4,
+      "y": 170,
+      "label": "Wave",
+      "module": "vco1",
+      "kind": "selector",
+      "values": [
+        "TRI",
+        "SAW",
+        "SQR"
+      ],
+      "radius": 26
+    },
+    "vco1.octave": {
+      "x": 68,
+      "y": 249.7,
+      "label": "Octave",
+      "module": "vco1",
+      "kind": "knob"
+    },
+    "vco1.fine": {
+      "x": 113.5,
+      "y": 249.7,
+      "label": "Fine",
+      "module": "vco1",
+      "kind": "knob"
+    },
+    "vco1.width": {
+      "x": 158.8,
+      "y": 249.7,
+      "label": "Width",
+      "module": "vco1",
+      "kind": "knob"
+    },
+    "vco2.wave": {
+      "x": 260.8,
+      "y": 170,
+      "label": "Wave",
+      "module": "vco2",
+      "kind": "selector",
+      "values": [
+        "TRI",
+        "SAW",
+        "SQR"
+      ],
+      "radius": 26
+    },
+    "vco2.octave": {
+      "x": 249.4,
+      "y": 249.7,
+      "label": "Octave",
+      "module": "vco2",
+      "kind": "knob"
+    },
+    "vco2.fine": {
+      "x": 294.9,
+      "y": 249.7,
+      "label": "Fine",
+      "module": "vco2",
+      "kind": "knob"
+    },
+    "vco2.width": {
+      "x": 340.20000000000005,
+      "y": 249.7,
+      "label": "Width",
+      "module": "vco2",
+      "kind": "knob"
+    },
+    "mixer.level4": {
+      "x": 431,
+      "y": 181.5,
+      "label": "level4",
+      "module": "mixer",
+      "kind": "knob"
+    },
+    "mixer.gain4": {
+      "x": 476.5,
+      "y": 181.5,
+      "label": "gain4",
+      "module": "mixer",
+      "kind": "knob"
+    },
+    "mixer.level1": {
+      "x": 431,
+      "y": 329,
+      "label": "Level 1",
+      "module": "mixer",
+      "kind": "slider",
+      "top": 284,
+      "bottom": 374
+    },
+    "mixer.level2": {
+      "x": 476.5,
+      "y": 329,
+      "label": "Level 2",
+      "module": "mixer",
+      "kind": "slider",
+      "top": 284,
+      "bottom": 374
+    },
+    "mixer.level3": {
+      "x": 522,
+      "y": 329,
+      "label": "Level 3",
+      "module": "mixer",
+      "kind": "slider",
+      "top": 284,
+      "bottom": 374
+    },
+    "filter.resonance": {
+      "x": 613,
+      "y": 181.5,
+      "label": "resonance",
+      "module": "filter",
+      "kind": "knob",
+      "radius": 11
+    },
+    "filter.cutoff": {
+      "x": 692.4,
+      "y": 170,
+      "label": "cutoff",
+      "module": "filter",
+      "kind": "knob",
+      "radius": 20
+    },
+    "filter.cv1": {
+      "x": 658.5,
+      "y": 249.7,
+      "label": "cv1",
+      "module": "filter",
+      "kind": "knob",
+      "radius": 11
+    },
+    "filter.cv2": {
+      "x": 704,
+      "y": 249.7,
+      "label": "cv2",
+      "module": "filter",
+      "kind": "knob",
+      "radius": 11
+    },
+    "env1.attack": {
+      "x": 68,
+      "y": 544.5,
+      "label": "attack",
+      "module": "env1",
+      "kind": "knob"
+    },
+    "env1.decay": {
+      "x": 113.5,
+      "y": 544.5,
+      "label": "decay",
+      "module": "env1",
+      "kind": "knob"
+    },
+    "env1.release": {
+      "x": 68,
+      "y": 612.5,
+      "label": "release",
+      "module": "env1",
+      "kind": "knob"
+    },
+    "env1.sustain": {
+      "x": 158.8,
+      "y": 613,
+      "label": "Sustain",
+      "module": "env1",
+      "kind": "slider",
+      "top": 542,
+      "bottom": 681
+    },
+    "env2.attack": {
+      "x": 249.4,
+      "y": 544.5,
+      "label": "attack",
+      "module": "env2",
+      "kind": "knob"
+    },
+    "env2.decay": {
+      "x": 294.9,
+      "y": 544.5,
+      "label": "decay",
+      "module": "env2",
+      "kind": "knob"
+    },
+    "env2.release": {
+      "x": 249.4,
+      "y": 612.5,
+      "label": "release",
+      "module": "env2",
+      "kind": "knob"
+    },
+    "env2.sustain": {
+      "x": 340.20000000000005,
+      "y": 613,
+      "label": "Sustain",
+      "module": "env2",
+      "kind": "slider",
+      "top": 542,
+      "bottom": 681
+    },
+    "crush.rate": {
+      "x": 431,
+      "y": 544.5,
+      "label": "crush rate",
+      "module": "crush",
+      "kind": "knob"
+    },
+    "lfo.rate": {
+      "x": 476.5,
+      "y": 544.5,
+      "label": "lfo rate",
+      "module": "lfo",
+      "kind": "knob"
+    },
+    "lfo.amount": {
+      "x": 476.5,
+      "y": 612.5,
+      "label": "lfo amount",
+      "module": "lfo",
+      "kind": "knob"
+    },
+    "output.volume": {
+      "x": 522,
+      "y": 544.5,
+      "label": "output volume",
+      "module": "output",
+      "kind": "knob"
+    },
+    "output.drive": {
+      "x": 522,
+      "y": 612.5,
+      "label": "output drive",
+      "module": "output",
+      "kind": "knob"
+    },
+    "brain.x": {
+      "x": 613,
+      "y": 544.5,
+      "label": "Brain X",
+      "module": "brain",
+      "kind": "knob",
+      "radius": 11
+    },
+    "brain.y": {
+      "x": 658.5,
+      "y": 544.5,
+      "label": "Brain Y",
+      "module": "brain",
+      "kind": "knob",
+      "radius": 11
+    },
+    "brain.z": {
+      "x": 704,
+      "y": 544.5,
+      "label": "Brain Z",
+      "module": "brain",
+      "kind": "knob",
+      "radius": 11
+    },
+    "mixer.main": {
+      "x": 522,
+      "y": 181.5,
+      "label": "Main level",
+      "module": "mixer",
+      "kind": "knob"
+    },
+    "mixer.threshold": {
+      "x": 476.5,
+      "y": 249.7,
+      "label": "Threshold",
+      "module": "mixer",
+      "kind": "knob"
+    }
+  }
+}

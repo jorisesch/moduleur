@@ -1,0 +1,4 @@
+interface:
+  display_name: "Moduleur Patches"
+  short_description: "Create reproducible Moduleur patch sheets"
+  default_prompt: "Use $moduleur-patches to create or update a reproducible Moduleur patch with a description page and annotated patch sheet."
