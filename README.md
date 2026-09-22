@@ -3,32 +3,27 @@
 > Playable patches, precise wiring diagrams, and a reusable Codex authoring skill
 > for the [Shmoergh Moduleur](https://www.shmoergh.com/moduleur/).
 
-Each patch pairs a concise performance guide with an annotated official panel.
+The growing patch collection pairs concise performance guides with annotated
+official panels. Each patch includes its editable definition, reusable vector
+overlay, and finished two-page PDF.
 The repository also contains the tools needed to author more patches and preserve
 local copies of Shmoergh's firmware, patch sheets, and source repositories.
 
-**[Open Alien Thunder](patches/alien-thunder/patch.pdf)** ·
-**[Open Autonomous Argumentative](patches/autonomous-argumentative/patch.pdf)** ·
+**[Browse patches](patches/)** ·
 **[Use the patch skill](.agents/skills/moduleur-patches/SKILL.md)** ·
 **[Refresh downloads](downloads/README.md)** ·
 **[Refresh source](upstream/README.md)**
 
-## Included patch
+## Patches
 
-### [Alien Thunder](patches/alien-thunder/patch.pdf)
+| Patch | Character | Brain |
+| --- | --- | --- |
+| **[Alien Thunder](patches/alien-thunder/patch.pdf)** | Noise cracks over a low metallic rumble, then decays through a slowly moving resonant filter. | Le Controlleur · Sequencer |
+| **[Autonomous Argumentative](patches/autonomous-argumentative/patch.pdf)** | A self-running conversation of bright chirps, stepped whistles, and nervous pitch warbles. | Le Controlleur · Sequencer |
 
-A noise impact over a low metallic rumble, shaped into distant, otherworldly
-thunder. The finished PDF opens with performance and setup guidance, followed by
-the complete annotated patch sheet.
-
-The [patch directory](patches/alien-thunder/) contains its editable JSON
-definition, vector overlay, PDF overlay, and finished two-page PDF.
-
-### [Autonomous Argumentative](patches/autonomous-argumentative/patch.pdf)
-
-A self-running conversation of bright chirps, stepped whistles, and nervous
-pitch warbles. Le Controlleur supplies pitch, filter movement, irregular timing,
-and short gates while the Moduleur's built-in audio path carries the voice.
+Every patch directory contains `patch.json`, `overlay.svg`, `overlay.pdf`, and
+`patch.pdf`. Open the finished PDF for setup, performance controls, complete
+wiring, internal normals, and critical knob and slider positions.
 
 ## Patch-authoring skill
 
