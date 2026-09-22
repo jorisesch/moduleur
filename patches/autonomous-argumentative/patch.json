@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "id": "autonomous-argumentative",
+  "title": "Autonomous Argumentative",
+  "revision": "1",
+  "status": "auditioned",
+  "summary": "A self-running stream of short electronic chirps, stepped whistles, and nervous pitch warbles inspired by an argumentative little service robot.",
+  "brain": {
+    "firmware": "Le Controlleur",
+    "version": "v1.4 (target; confirm installed)",
+    "mode": "Sequencer",
+    "layout": "three-knobs-two-buttons",
+    "settings": [
+      "X/Y/Z are upper knobs left to right; A/B are lower buttons. Press A to run.",
+      "X: 45% tempo. Keep above minimum because minimum selects external sync.",
+      "Y: 65% octave range for wide pitch jumps. Z: 55% randomness for an irregular conversation.",
+      "OUT 1 drives oscillator pitch; OUT 2 changes filter color; PULSE supplies 20 ms gates."
+    ]
+  },
+  "description": {
+    "sound": [
+      "Short bright chirps jump between pitches while the filter changes color and a fast LFO makes each tone wobble. The result should suggest an animated machine trying urgently to explain something."
+    ],
+    "setup": [
+      "Make the five numbered connections. Five dashed routes are built in and need no cables; the headphone lead is separate. Select Sequencer mode, start with output volume low, then press A.",
+      "Set the marked controls before raising the output. If the sound is dull, open cutoff; if it whistles continuously, reduce resonance or Filter CV2."
+    ],
+    "play": [
+      "Turn Brain X to change speaking speed and Z to move between repeated phrases and scattered chatter. Move LFO RATE from fast warble toward audio rate for sharper metallic vowels.",
+      "Use VCO 1 FINE as a voice control. Small movements shift the whole character without changing the programmed sequence."
+    ],
+    "variations": [
+      "Raise envelope decay for longer whistles. Increase Brain Y for wider leaps. Remove cable 5 for cleaner tones, or reduce LFO amount when the pitch becomes too seasick."
+    ]
+  },
+  "normalled_policy": "N1-N5 retain the built-in VCO 1-to-mixer, mixer-to-filter, filter-to-VCA 1, ENV 1-to-control, and VCA 1-to-output audio chain. The five physical cables supply pitch, gate, two filter movements, and oscillator FM.",
+  "external": {
+    "external.headphones": {
+      "label": "Stereo headphones",
+      "direction": "in",
+      "x": 522,
+      "y": 852
+    }
+  },
+  "connections": [
+    {
+      "id": "1",
+      "from": "brain.out1",
+      "to": "vco1.pitch",
+      "kind": "cable",
+      "signal": "pitch",
+      "via": [[598, 771.5], [598, 824], [31, 824], [31, 408.5]],
+      "label_at": [31, 500]
+    },
+    {
+      "id": "2",
+      "from": "brain.pulse",
+      "to": "env1.gate",
+      "kind": "cable",
+      "signal": "gate",
+      "via": [[704, 832], [51, 832], [51, 703.5]],
+      "label_at": [380, 832]
+    },
+    {
+      "id": "3",
+      "from": "brain.out2",
+      "to": "filter.cv2",
+      "kind": "cable",
+      "signal": "cv",
+      "via": [[676, 790], [752, 790], [752, 319], [704, 319]],
+      "label_at": [752, 590]
+    },
+    {
+      "id": "4",
+      "from": "env1.env",
+      "to": "filter.cv1",
+      "kind": "cable",
+      "signal": "cv",
+      "via": [[184, 703.5], [184, 475], [658.5, 475], [658.5, 340.4]],
+      "label_at": [420, 475]
+    },
+    {
+      "id": "5",
+      "from": "lfo.triangle",
+      "to": "vco1.fm",
+      "kind": "cable",
+      "signal": "cv",
+      "via": [[476.5, 808], [210, 808], [210, 452], [113.5, 452], [113.5, 340.4]],
+      "label_at": [210, 620]
+    },
+    {
+      "id": "6",
+      "from": "output.out",
+      "to": "external.headphones",
+      "kind": "cable",
+      "signal": "audio",
+      "label_at": [522, 836]
+    },
+    {
+      "id": "N1",
+      "from": "vco1.out",
+      "to": "mixer.in1",
+      "kind": "normal",
+      "signal": "audio",
+      "via": [[158.8, 443], [431, 443]],
+      "label_at": [285, 443]
+    },
+    {
+      "id": "N2",
+      "from": "mixer.out",
+      "to": "filter.lp",
+      "kind": "normal",
+      "signal": "audio",
+      "via": [[560, 249.7], [560, 454], [590, 454], [590, 408.5]],
+      "label_at": [560, 390]
+    },
+    {
+      "id": "N3",
+      "from": "filter.out",
+      "to": "env1.in",
+      "kind": "normal",
+      "signal": "audio",
+      "via": [[733, 408.5], [733, 816], [80, 816], [80, 771.5]],
+      "label_at": [733, 675]
+    },
+    {
+      "id": "N4",
+      "from": "env1.env",
+      "to": "env1.control",
+      "kind": "normal",
+      "signal": "cv",
+      "label_at": [113.5, 738]
+    },
+    {
+      "id": "N5",
+      "from": "env1.out",
+      "to": "output.in",
+      "kind": "normal",
+      "signal": "audio",
+      "via": [[158.8, 790], [546, 790], [546, 703.5]],
+      "label_at": [395, 790]
+    }
+  ],
+  "controls": {
+    "vco1.wave": {"value": "SAW", "critical": true},
+    "vco1.octave": {"position": 0.72, "value": "72%; high", "critical": true},
+    "vco1.fine": {"position": 0.55, "value": "55%; tune by ear", "critical": true},
+    "vco1.width": {"irrelevant": "Saw selected; pulse width does not affect this waveform."},
+    "mixer.level1": {"position": 0.55, "value": "55%", "critical": true},
+    "mixer.level2": {"position": 0, "value": "0%; unused", "critical": true},
+    "mixer.level3": {"position": 0, "value": "0%; unused", "critical": true},
+    "mixer.level4": {"position": 0, "value": "0%; unused", "critical": true},
+    "mixer.gain4": {"irrelevant": "Mixer input 4 is unused and its level is zero."},
+    "mixer.main": {"position": 0.48, "value": "48%", "critical": true},
+    "mixer.threshold": {"irrelevant": "No signal enters sidechain input 4, so compression is inactive."},
+    "filter.resonance": {"position": 0.58, "value": "58%; vocal", "critical": true},
+    "filter.cutoff": {"position": 0.62, "value": "62%", "critical": true},
+    "filter.cv1": {"position": 0.68, "value": "68% (+)", "critical": true},
+    "filter.cv2": {"position": 0.58, "value": "58% (+)", "critical": true},
+    "env1.attack": {"position": 0, "value": "minimum", "critical": true},
+    "env1.decay": {"position": 0.18, "value": "18%; short", "critical": true},
+    "env1.sustain": {"position": 0, "value": "0%", "critical": true},
+    "env1.release": {"position": 0.1, "value": "10%", "critical": true},
+    "lfo.rate": {"position": 0.72, "value": "72%; fast warble", "critical": true},
+    "lfo.amount": {"position": 0.3, "value": "30%; moderate", "critical": true},
+    "output.volume": {"position": 0.08, "value": "8%; start low", "critical": true},
+    "output.drive": {"position": 0.08, "value": "8%", "critical": true},
+    "brain.x": {"position": 0.45, "value": "45%; tempo", "critical": true},
+    "brain.y": {"position": 0.65, "value": "65%; octave range", "critical": true},
+    "brain.z": {"position": 0.55, "value": "55%; randomness", "critical": true}
+  },
+  "sources": [
+    "Firmware: upstream/le-controlleur/SEQUENCER.md (target download v1.4; installed version unconfirmed)",
+    "Instrument and modules: shmoergh.com/guides/moduleur-user-guide/; upstream/moduleur/modules/",
+    "Background: shmoergh.com/content/files/2026/02/moduleur-patch-sheet.pdf"
+  ]
+}

@@ -8,6 +8,7 @@ The repository also contains the tools needed to author more patches and preserv
 local copies of Shmoergh's firmware, patch sheets, and source repositories.
 
 **[Open Alien Thunder](patches/alien-thunder/patch.pdf)** ·
+**[Open Autonomous Argumentative](patches/autonomous-argumentative/patch.pdf)** ·
 **[Use the patch skill](.agents/skills/moduleur-patches/SKILL.md)** ·
 **[Refresh downloads](downloads/README.md)** ·
 **[Refresh source](upstream/README.md)**
@@ -22,6 +23,12 @@ the complete annotated patch sheet.
 
 The [patch directory](patches/alien-thunder/) contains its editable JSON
 definition, vector overlay, PDF overlay, and finished two-page PDF.
+
+### [Autonomous Argumentative](patches/autonomous-argumentative/patch.pdf)
+
+A self-running conversation of bright chirps, stepped whistles, and nervous
+pitch warbles. Le Controlleur supplies pitch, filter movement, irregular timing,
+and short gates while the Moduleur's built-in audio path carries the voice.
 
 ## Patch-authoring skill
 
