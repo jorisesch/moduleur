@@ -13,8 +13,6 @@ patches/<name>/
 Definitions, overlays, and finished PDFs are intended for Git. The official blank
 sheet and firmware downloads remain ignored under `downloads/`. The example's
 combined PDF is about 127 KB; its PDF overlay is about 6 KB and SVG about 14.5 KB.
-There is no need for Git LFS at these sizes. Review sizes again if adding images.
-
 ## Use with Codex
 
 Open this repository (`moduleur/`) as the Codex project. The shared skill lives at
@@ -36,8 +34,6 @@ To reuse outside this repository, copy the whole `moduleur-patches` skill folder
 into the other project's `.agents/skills/`. Its renderer, map, and format reference
 travel with it. Put definitions in that project's `patches/` directory and supply
 `--background /path/to/moduleur-patch-sheet.pdf` to the skill's renderer if needed.
-No personal Codex configuration or private account notes are included here.
-
 ## Build in one command
 
 One-time setup: install Python 3.10+ and the two PDF packages. A virtual environment
