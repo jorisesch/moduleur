@@ -1,0 +1,1 @@
+-r ../.agents/skills/moduleur-patches/scripts/requirements.txt
