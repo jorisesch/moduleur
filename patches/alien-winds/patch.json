@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "id": "alien-winds",
+  "title": "Alien Winds",
+  "revision": "2",
+  "status": "untested",
+  "summary": "Slow, breathing gusts made from filtered noise, with the LFO shaping motion and the Brain adding an unpredictable pulse pattern.",
+  "brain": {
+    "firmware": "Le Controlleur",
+    "version": "v1.4 (target; confirm installed)",
+    "mode": "Sequencer",
+    "layout": "three-knobs-two-buttons",
+    "settings": [
+      "X/Y/Z are upper knobs left to right; A/B are lower buttons. Press A to run.",
+      "X: 100% tempo. Y: 100% octave range. Z: 100% randomness.",
+      "PULSE modulates Filter CV1. The random pattern can occasionally slow to zero and let the wind die away."
+    ]
+  },
+  "description": {
+    "sound": [
+      "A low, resonant wind bed rises and falls in long gusts. Filter movement gives the noise a distant, otherworldly voice rather than a steady hiss."
+    ],
+    "setup": [
+      "Remove existing patch cables. Make the six numbered instrument connections. The dashed ENV OUT to CONTROL path is internal; the headphone lead is separate.",
+      "Use VCO 2's NOISE output. Connect stereo headphones to the final output and begin with output volume at minimum.",
+      "The percentages are physical starting positions. Adjust by ear for differences in analog timing, filter response, and VCA calibration.",
+      "Set the marked controls, select Sequencer mode, power on, then raise output volume slowly and press A. The right envelope LED, LFO LED, and Brain A LED should pulse."
+    ],
+    "play": [
+      "Turn filter cutoff slowly to search for vocal and whistling bands.",
+      "Use LFO rate as the main performance control. Very slow settings make broad gusts; faster settings produce rhythmic breathing.",
+      "At full Brain randomness the pattern occasionally slows to zero and dies away. Press A if the sequencer has stopped; otherwise let the silence resolve into the next gust."
+    ],
+    "variations": [
+      "CV1 and CV2 both modulate cutoff. Use either or both; each LEVEL sets depth and reverses direction around center.",
+      "LFO TRI gives a smooth sweep, Brain PULSE gives short accents, and Brain OUT/1 gives stepped changes held between sequencer steps.",
+      "Pairs: TRI + PULSE adds accents to smooth gusts; TRI + OUT/1 mixes smooth and stepped motion; PULSE + OUT/1 makes an abrupt sequenced storm. A splitter or stackable cable can send one source to both inputs; align LEVELs to reinforce it or oppose them to partly cancel.",
+      "Sweep resonance from 60% to 100% to move from broad wind to a narrow, singing whistle. Lower output volume if it becomes piercing."
+    ]
+  },
+  "normalled_policy": "ENV/VCA 2 ENV OUT -> CONTROL remains internally normalled (N1), saving one patch cable. Physical cables override both filter CV inputs and the filter audio input; the left Envelope/VCA and all other default paths are excluded from the output.",
+  "external": {
+    "external.headphones": {
+      "label": "Stereo headphones",
+      "direction": "in",
+      "x": 522,
+      "y": 852
+    }
+  },
+  "connections": [
+    {
+      "id": "1",
+      "from": "vco2.noise",
+      "to": "filter.lp",
+      "kind": "cable",
+      "signal": "audio",
+      "via": [[294.9, 438], [580, 438], [580, 408.5]],
+      "label_at": [440, 438]
+    },
+    {
+      "id": "2",
+      "from": "lfo.triangle",
+      "to": "filter.cv2",
+      "kind": "cable",
+      "signal": "cv",
+      "via": [[476.5, 800], [752, 800], [752, 319], [704, 319]],
+      "label_at": [752, 575]
+    },
+    {
+      "id": "3",
+      "from": "lfo.square",
+      "to": "env2.gate",
+      "kind": "cable",
+      "signal": "gate",
+      "via": [[476.5, 728], [249.4, 728]],
+      "label_at": [385, 728]
+    },
+    {
+      "id": "4",
+      "from": "filter.out",
+      "to": "env2.in",
+      "kind": "cable",
+      "signal": "audio",
+      "via": [[733, 408.5], [733, 816], [225, 816], [225, 771.5]],
+      "label_at": [733, 675]
+    },
+    {
+      "id": "5",
+      "from": "env2.out",
+      "to": "output.in",
+      "kind": "cable",
+      "signal": "audio",
+      "via": [[363, 771.5], [363, 680], [522, 680]],
+      "label_at": [438, 680]
+    },
+    {
+      "id": "6",
+      "from": "brain.pulse",
+      "to": "filter.cv1",
+      "kind": "cable",
+      "signal": "gate",
+      "via": [[704, 832], [738, 832], [738, 300], [658.5, 300]],
+      "label_at": [738, 575]
+    },
+    {
+      "id": "7",
+      "from": "output.out",
+      "to": "external.headphones",
+      "kind": "cable",
+      "signal": "audio",
+      "label_at": [522, 836]
+    },
+    {
+      "id": "N1",
+      "from": "env2.env",
+      "to": "env2.control",
+      "kind": "normal",
+      "signal": "cv",
+      "label_at": [294.9, 738]
+    }
+  ],
+  "controls": {
+    "vco2.wave": {
+      "irrelevant": "The dedicated NOISE output is used; the main oscillator waveform is not in the audio path."
+    },
+    "vco2.octave": {
+      "irrelevant": "The dedicated NOISE output is independent of oscillator tuning."
+    },
+    "vco2.fine": {
+      "irrelevant": "The dedicated NOISE output is independent of oscillator tuning."
+    },
+    "vco2.width": {
+      "irrelevant": "The square-wave output is not used."
+    },
+    "filter.resonance": {
+      "position": 0.7,
+      "value": "70%; reduce if piercing",
+      "critical": true
+    },
+    "filter.cutoff": {
+      "position": 0.65,
+      "value": "65%; tune by ear",
+      "critical": true
+    },
+    "filter.cv1": {
+      "position": 0.65,
+      "value": "65%; Brain pulse depth",
+      "critical": true
+    },
+    "filter.cv2": {
+      "position": 0.68,
+      "value": "68%; LFO sweep",
+      "critical": true
+    },
+    "env2.attack": {
+      "position": 0.4,
+      "value": "40%",
+      "critical": true
+    },
+    "env2.decay": {
+      "position": 0.55,
+      "value": "55%",
+      "critical": true
+    },
+    "env2.sustain": {
+      "position": 0.65,
+      "value": "65%",
+      "critical": true
+    },
+    "env2.release": {
+      "position": 0.65,
+      "value": "65%",
+      "critical": true
+    },
+    "lfo.rate": {
+      "position": 0.08,
+      "value": "8%; slow",
+      "critical": true
+    },
+    "lfo.amount": {
+      "position": 0.65,
+      "value": "65%",
+      "critical": true
+    },
+    "output.volume": {
+      "position": 0.08,
+      "value": "8%; low",
+      "critical": true
+    },
+    "output.drive": {
+      "position": 0,
+      "value": "minimum",
+      "critical": true
+    },
+    "brain.x": {
+      "position": 1,
+      "value": "100%; tempo",
+      "critical": true
+    },
+    "brain.y": {
+      "position": 1,
+      "value": "100%; octave range",
+      "critical": true
+    },
+    "brain.z": {
+      "position": 1,
+      "value": "100%; randomness",
+      "critical": true
+    }
+  },
+  "sources": [
+    "Instrument: shmoergh.com/guides/moduleur-user-guide/",
+    "Firmware: upstream/le-controlleur/SEQUENCER.md (target v1.4; installed version unconfirmed)",
+    "Background: shmoergh.com/content/files/2026/02/moduleur-patch-sheet.pdf"
+  ]
+}

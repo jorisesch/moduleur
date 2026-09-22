@@ -18,6 +18,7 @@ local copies of Shmoergh's firmware, patch sheets, and source repositories.
 
 | Patch | Character | Brain |
 | --- | --- | --- |
+| **[Alien Winds](patches/alien-winds/patch.pdf)** | Filtered noise rises and falls in breathing gusts, shaped by smooth LFO movement and unpredictable sequencer accents. | Le Controlleur · Sequencer |
 | **[Alien Thunder](patches/alien-thunder/patch.pdf)** | Noise cracks over a low metallic rumble, then decays through a slowly moving resonant filter. | Le Controlleur · Sequencer |
 | **[Autonomous Argumentative](patches/autonomous-argumentative/patch.pdf)** | A self-running conversation of bright chirps, stepped whistles, and nervous pitch warbles. | Le Controlleur · Sequencer |
 

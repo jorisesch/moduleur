@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="771.024pt" height="952.441pt" viewBox="0 0 771.024 952.441">
+<rect x="506" y="871" width="35" height="14" fill="white"/>
+<rect x="386" y="38" width="88.464" height="19" fill="white"/>
+<text x="388" y="53" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#152b39" text-anchor="start">Alien Winds</text>
+<rect x="386" y="68" width="171.632" height="11" fill="white"/>
+<text x="388" y="75" font-family="Helvetica,Arial,sans-serif" font-size="8" fill="#152b39" text-anchor="start">Solid = cable    Dashed = active internal normal</text>
+<polyline points="294.9,408.5 294.9,438 580,438 580,408.5 613,408.5" fill="none" stroke="white" stroke-width="4.2"/>
+<polyline points="294.9,408.5 294.9,438 580,438 580,408.5 613,408.5" fill="none" stroke="#007f78" stroke-width="2.2"/>
+<polyline points="600.0,411.5 607.0,408.5 600.0,405.5" fill="none" stroke="#007f78" stroke-width="1.4"/>
+<circle cx="294.9" cy="408.5" r="4.2" stroke="#007f78" fill="white" stroke-width="1.5"/>
+<circle cx="613" cy="408.5" r="4.2" stroke="#007f78" fill="white" stroke-width="1.5"/>
+<circle cx="440" cy="438" r="8" stroke="#007f78" fill="white" stroke-width="1.2"/>
+<text x="440" y="440.8" font-family="Helvetica,Arial,sans-serif" font-size="7.5" fill="#007f78" text-anchor="middle">1</text>
+<polyline points="476.5,771.5 476.5,800 752,800 752,319 704,319 704,340.4" fill="none" stroke="white" stroke-width="4.2"/>
+<polyline points="476.5,771.5 476.5,800 752,800 752,319 704,319 704,340.4" fill="none" stroke="#a05500" stroke-width="2.2"/>
+<polyline points="701.0,327.4 704.0,334.4 707.0,327.4" fill="none" stroke="#a05500" stroke-width="1.4"/>
+<circle cx="476.5" cy="771.5" r="4.2" stroke="#a05500" fill="white" stroke-width="1.5"/>
+<circle cx="704" cy="340.4" r="4.2" stroke="#a05500" fill="white" stroke-width="1.5"/>
+<circle cx="752" cy="575" r="8" stroke="#a05500" fill="white" stroke-width="1.2"/>
+<text x="752" y="577.8" font-family="Helvetica,Arial,sans-serif" font-size="7.5" fill="#a05500" text-anchor="middle">2</text>
+<polyline points="476.5,703.5 476.5,728 249.4,728 249.4,703.5" fill="none" stroke="white" stroke-width="4.2"/>
+<polyline points="476.5,703.5 476.5,728 249.4,728 249.4,703.5" fill="none" stroke="#bd3548" stroke-width="2.2"/>
+<polyline points="252.4,716.5 249.4,709.5 246.4,716.5" fill="none" stroke="#bd3548" stroke-width="1.4"/>
+<circle cx="476.5" cy="703.5" r="4.2" stroke="#bd3548" fill="white" stroke-width="1.5"/>
+<circle cx="249.4" cy="703.5" r="4.2" stroke="#bd3548" fill="white" stroke-width="1.5"/>
+<circle cx="385" cy="728" r="8" stroke="#bd3548" fill="white" stroke-width="1.2"/>
+<text x="385" y="730.8" font-family="Helvetica,Arial,sans-serif" font-size="7.5" fill="#bd3548" text-anchor="middle">3</text>
+<polyline points="704,408.5 733,408.5 733,816 225,816 225,771.5 249.4,771.5" fill="none" stroke="white" stroke-width="4.2"/>
+<polyline points="704,408.5 733,408.5 733,816 225,816 225,771.5 249.4,771.5" fill="none" stroke="#007f78" stroke-width="2.2"/>
+<polyline points="236.4,774.5 243.4,771.5 236.4,768.5" fill="none" stroke="#007f78" stroke-width="1.4"/>
+<circle cx="704" cy="408.5" r="4.2" stroke="#007f78" fill="white" stroke-width="1.5"/>
+<circle cx="249.4" cy="771.5" r="4.2" stroke="#007f78" fill="white" stroke-width="1.5"/>
+<circle cx="733" cy="675" r="8" stroke="#007f78" fill="white" stroke-width="1.2"/>
+<text x="733" y="677.8" font-family="Helvetica,Arial,sans-serif" font-size="7.5" fill="#007f78" text-anchor="middle">4</text>
+<polyline points="340.20000000000005,771.5 363,771.5 363,680 522,680 522,703.5" fill="none" stroke="white" stroke-width="4.2"/>
+<polyline points="340.20000000000005,771.5 363,771.5 363,680 522,680 522,703.5" fill="none" stroke="#007f78" stroke-width="2.2"/>
+<polyline points="519.0,690.5 522.0,697.5 525.0,690.5" fill="none" stroke="#007f78" stroke-width="1.4"/>
+<circle cx="340.20000000000005" cy="771.5" r="4.2" stroke="#007f78" fill="white" stroke-width="1.5"/>
+<circle cx="522" cy="703.5" r="4.2" stroke="#007f78" fill="white" stroke-width="1.5"/>
+<circle cx="438" cy="680" r="8" stroke="#007f78" fill="white" stroke-width="1.2"/>
+<text x="438" y="682.8" font-family="Helvetica,Arial,sans-serif" font-size="7.5" fill="#007f78" text-anchor="middle">5</text>
+<polyline points="704,771.5 704,832 738,832 738,300 658.5,300 658.5,340.4" fill="none" stroke="white" stroke-width="4.2"/>
+<polyline points="704,771.5 704,832 738,832 738,300 658.5,300 658.5,340.4" fill="none" stroke="#bd3548" stroke-width="2.2"/>
+<polyline points="655.5,327.4 658.5,334.4 661.5,327.4" fill="none" stroke="#bd3548" stroke-width="1.4"/>
+<circle cx="704" cy="771.5" r="4.2" stroke="#bd3548" fill="white" stroke-width="1.5"/>
+<circle cx="658.5" cy="340.4" r="4.2" stroke="#bd3548" fill="white" stroke-width="1.5"/>
+<circle cx="738" cy="575" r="8" stroke="#bd3548" fill="white" stroke-width="1.2"/>
+<text x="738" y="577.8" font-family="Helvetica,Arial,sans-serif" font-size="7.5" fill="#bd3548" text-anchor="middle">6</text>
+<polyline points="522,771.5 522,852" fill="none" stroke="white" stroke-width="4.2"/>
+<polyline points="522,771.5 522,852" fill="none" stroke="#007f78" stroke-width="2.2"/>
+<polyline points="519.0,839.0 522.0,846.0 525.0,839.0" fill="none" stroke="#007f78" stroke-width="1.4"/>
+<circle cx="522" cy="771.5" r="4.2" stroke="#007f78" fill="white" stroke-width="1.5"/>
+<circle cx="522" cy="852" r="4.2" stroke="#007f78" fill="white" stroke-width="1.5"/>
+<circle cx="522" cy="836" r="8" stroke="#007f78" fill="white" stroke-width="1.2"/>
+<text x="522" y="838.8" font-family="Helvetica,Arial,sans-serif" font-size="7.5" fill="#007f78" text-anchor="middle">7</text>
+<polyline points="294.9,703.5 294.9,771.5" fill="none" stroke="white" stroke-width="4.2"/>
+<polyline points="294.9,703.5 294.9,771.5" fill="none" stroke="#a05500" stroke-width="1.4" stroke-dasharray="4 3"/>
+<polyline points="291.9,758.5 294.9,765.5 297.9,758.5" fill="none" stroke="#a05500" stroke-width="1.4"/>
+<circle cx="294.9" cy="703.5" r="4.2" stroke="#a05500" fill="white" stroke-width="1.5"/>
+<circle cx="294.9" cy="771.5" r="4.2" stroke="#a05500" fill="white" stroke-width="1.5"/>
+<circle cx="294.9" cy="738" r="8" stroke="#a05500" fill="white" stroke-width="1.2"/>
+<text x="294.9" y="740.8" font-family="Helvetica,Arial,sans-serif" font-size="7.5" fill="#a05500" text-anchor="middle">N1</text>
+<rect x="256.136" y="167" width="9.328" height="11" fill="white"/>
+<text x="260.8" y="174" font-family="Helvetica,Arial,sans-serif" font-size="8" fill="#7d8790" text-anchor="middle">--</text>
+<rect x="244.73600000000002" y="246.7" width="9.328" height="11" fill="white"/>
+<text x="249.4" y="253.7" font-family="Helvetica,Arial,sans-serif" font-size="8" fill="#7d8790" text-anchor="middle">--</text>
+<rect x="290.236" y="246.7" width="9.328" height="11" fill="white"/>
+<text x="294.9" y="253.7" font-family="Helvetica,Arial,sans-serif" font-size="8" fill="#7d8790" text-anchor="middle">--</text>
+<rect x="335.53600000000006" y="246.7" width="9.328" height="11" fill="white"/>
+<text x="340.20000000000005" y="253.7" font-family="Helvetica,Arial,sans-serif" font-size="8" fill="#7d8790" text-anchor="middle">--</text>
+<polyline points="613,181.5 621.8991869381244,175.0343622247828" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
+<rect x="575.4014999999999" y="196.5" width="75.197" height="10" fill="white"/>
+<text x="613" y="202.5" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">70%; reduce if piercing</text>
+<polyline points="692.4,170 705.3889609666037,154.79188068799937" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
+<rect x="663.9399999999999" y="194" width="56.92" height="10" fill="white"/>
+<text x="692.4" y="200" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">65%; tune by ear</text>
+<polyline points="658.5,249.7 665.643928531632,241.33553437839964" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
+<rect x="620.3135" y="264.7" width="76.373" height="10" fill="white"/>
+<text x="658.5" y="270.7" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">65%; Brain pulse depth</text>
+<polyline points="704,249.7 712.251221765935,242.42556948143982" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
+<rect x="675.155" y="264.7" width="57.69" height="10" fill="white"/>
+<text x="704" y="270.7" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">68%; LFO sweep</text>
+<polyline points="249.4,544.5 244.86009500260454,535.5899347581163" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
+<rect x="240.3965" y="558.5" width="18.006999999999998" height="10" fill="white"/>
+<text x="249.4" y="564.5" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">40%</text>
+<polyline points="294.9,544.5 297.23445363855905,534.7763007960232" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
+<rect x="285.8965" y="558.5" width="18.006999999999998" height="10" fill="white"/>
+<text x="294.9" y="564.5" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">55%</text>
+<rect x="334.20000000000005" y="588.15" width="12" height="5" fill="#bb3d14"/>
+<rect x="353.19650000000007" y="587.65" width="18.006999999999998" height="10" fill="white"/>
+<text x="362.20000000000005" y="593.65" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">65%</text>
+<polyline points="249.4,612.5 255.89448048330183,604.8959403439997" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
+<rect x="240.3965" y="626.5" width="18.006999999999998" height="10" fill="white"/>
+<text x="249.4" y="632.5" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">65%</text>
+<polyline points="476.5,544.5 467.32245374316017,548.4714789063478" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
+<rect x="460.4965" y="558.5" width="32.007000000000005" height="10" fill="white"/>
+<text x="476.5" y="564.5" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">8%; slow</text>
+<polyline points="476.5,612.5 482.99448048330186,604.8959403439997" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
+<rect x="467.4965" y="626.5" width="18.006999999999998" height="10" fill="white"/>
+<text x="476.5" y="632.5" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">65%</text>
+<polyline points="522,544.5 512.8224537431602,548.4714789063478" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
+<rect x="507.7465" y="558.5" width="28.506999999999998" height="10" fill="white"/>
+<text x="522" y="564.5" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">8%; low</text>
+<polyline points="522,612.5 514.9289321881345,619.5710678118654" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
+<rect x="505.8075" y="626.5" width="32.385" height="10" fill="white"/>
+<text x="522" y="632.5" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">minimum</text>
+<polyline points="613,544.5 620.778174593052,552.278174593052" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
+<rect x="590.378" y="559.5" width="45.244" height="10" fill="white"/>
+<text x="613" y="565.5" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">100%; tempo</text>
+<polyline points="658.5,544.5 666.278174593052,552.278174593052" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
+<rect x="625.371" y="559.5" width="66.25800000000001" height="10" fill="white"/>
+<text x="658.5" y="565.5" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">100%; octave range</text>
+<polyline points="704,544.5 711.778174593052,552.278174593052" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
+<rect x="671.8475" y="559.5" width="64.305" height="10" fill="white"/>
+<text x="704" y="565.5" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">100%; randomness</text>
+<rect x="485.088" y="833" width="73.824" height="11" fill="white"/>
+<text x="522" y="840" font-family="Helvetica,Arial,sans-serif" font-size="8" fill="#152b39" text-anchor="middle">Stereo headphones</text>
+<rect x="53" y="865" width="55.012" height="12" fill="white"/>
+<text x="55" y="873" font-family="Helvetica,Arial,sans-serif" font-size="9" fill="#152b39" text-anchor="start">PATCH KEY</text>
+<polyline points="55,891 72,891" fill="none" stroke="#007f78" stroke-width="2"/>
+<rect x="75" y="887" width="29.336000000000002" height="11" fill="white"/>
+<text x="77" y="894" font-family="Helvetica,Arial,sans-serif" font-size="8" fill="#007f78" text-anchor="start">AUDIO</text>
+<polyline points="148,891 165,891" fill="none" stroke="#245fc4" stroke-width="2"/>
+<rect x="168" y="887" width="41.336" height="11" fill="white"/>
+<text x="170" y="894" font-family="Helvetica,Arial,sans-serif" font-size="8" fill="#245fc4" text-anchor="start">PITCH CV</text>
+<polyline points="241,891 258,891" fill="none" stroke="#a05500" stroke-width="2"/>
+<rect x="261" y="887" width="36.0" height="11" fill="white"/>
+<text x="263" y="894" font-family="Helvetica,Arial,sans-serif" font-size="8" fill="#a05500" text-anchor="start">MOD CV</text>
+<polyline points="334,891 351,891" fill="none" stroke="#bd3548" stroke-width="2"/>
+<rect x="354" y="887" width="47.12" height="11" fill="white"/>
+<text x="356" y="894" font-family="Helvetica,Arial,sans-serif" font-size="8" fill="#bd3548" text-anchor="start">GATE/TRIG</text>
+<polyline points="427,891 444,891" fill="none" stroke="#7c42a3" stroke-width="2"/>
+<rect x="447" y="887" width="20.888" height="11" fill="white"/>
+<text x="449" y="894" font-family="Helvetica,Arial,sans-serif" font-size="8" fill="#7c42a3" text-anchor="start">MIDI</text>
+<rect x="50" y="902" width="405" height="38" fill="white"/>
+<text x="55" y="914" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#152b39" text-anchor="start">Orange control marks = critical. -- = irrelevant (reasons on page 1).</text>
+<text x="55" y="928" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#152b39" text-anchor="start">Positions are physical starting points. Cable IDs and firmware settings: page 1.</text>
+</svg>
