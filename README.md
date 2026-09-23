@@ -1,70 +1,52 @@
 # Shmoergh Moduleur patches
 
-> Playable patches, precise wiring diagrams, and a reusable Codex authoring skill
-> for the [Shmoergh Moduleur](https://www.shmoergh.com/moduleur/).
+Alien weather, restless robots, and a few cables between them.
 
-The growing patch collection pairs concise performance guides with annotated
-official panels. Each patch includes its editable definition, reusable vector
-overlay, and finished two-page PDF.
-The repository also contains the tools needed to author more patches and preserve
-local copies of Shmoergh's firmware, patch sheets, and source repositories.
+Turn a little noise into a gathering storm. Let two oscillators argue in chirps
+and whistles. Find a sound you like, then move one cable and hear where it goes.
+These patches are starting points for exploring the
+[Shmoergh Moduleur](https://www.shmoergh.com/moduleur/), by Joris Esch.
 
-**[Browse patches](patches/)** ·
-**[Use the patch skill](.agents/skills/moduleur-patches/SKILL.md)** ·
-**[Refresh downloads](downloads/README.md)** ·
-**[Refresh source](upstream/README.md)**
+[![Alien Winds patch sheet with colored cable routes and marked control positions](patches/alien-winds/preview.png)](patches/alien-winds/patch.pdf)
 
-## Patches
+*Alien Winds — slow gusts, resonant whistles, and unpredictable accents. Click the sheet to open the full patch.*
 
-| Patch | Character | Brain |
+## Pick a sound
+
+| Patch | What to listen for | Brain |
 | --- | --- | --- |
-| **[Alien Winds](patches/alien-winds/patch.pdf)** | Filtered noise rises and falls in breathing gusts, shaped by smooth LFO movement and unpredictable sequencer accents. | Le Controlleur · Sequencer |
-| **[Alien Thunder](patches/alien-thunder/patch.pdf)** | Noise cracks over a low metallic rumble, then decays through a slowly moving resonant filter. | Le Controlleur · Sequencer |
-| **[Autonomous Argumentative](patches/autonomous-argumentative/patch.pdf)** | A self-running conversation of bright chirps, stepped whistles, and nervous pitch warbles. | Le Controlleur · Sequencer |
+| **[Alien Winds](patches/alien-winds/patch.pdf)** | Breathing gusts of noise. Sweep resonance to pull a singing whistle out of the wind. | Le Controlleur · Sequencer |
+| **[Alien Thunder](patches/alien-thunder/patch.pdf)** | Noise cracks over a low metallic rumble and fades through a moving filter. | Le Controlleur · Sequencer |
+| **[Autonomous Argumentative](patches/autonomous-argumentative/patch.pdf)** | Bright chirps, stepped whistles, and nervous warbles in a conversation that runs by itself. | Le Controlleur · Sequencer |
 
-Every patch directory contains `patch.json`, `overlay.svg`, `overlay.pdf`, and
-`patch.pdf`. Open the finished PDF for setup, performance controls, complete
-wiring, internal normals, and critical knob and slider positions.
+Open a patch, follow the numbered cables, and start with the marked controls.
+Then try the performance moves and variations. Solid lines are cables; dashed
+lines are built-in connections. Start with output volume low and tune by ear.
 
-## Patch-authoring skill
+## Make something of your own
 
-The repository-scoped [Moduleur patch skill](.agents/skills/moduleur-patches/SKILL.md)
-packages the authoring workflow, format reference, panel map, renderer, and Python
-requirements. Codex discovers it automatically while working in this repository.
+Found a sound worth returning to? Use the
+[Moduleur patch skill](.agents/skills/moduleur-patches/SKILL.md) in Codex to capture
+its wiring, knob positions, and Brain settings:
 
-The skill records every active cable and internal normal, every critical control
-position, and the Brain firmware and mode. It generates a compact vector overlay
-and a two-page PDF using the minimal style by default. Additional presentation
-styles are available through the renderer's `--style` option.
+> Use $moduleur-patches to create a slow, evolving bass patch with Le Controlleur
+> in Sequencer mode.
 
-## At a glance
+[Build and edit patch sheets](patches/README.md) to save your own sounds or adapt
+one of these patches.
 
-| Path | Purpose |
-| --- | --- |
-| [`patches/`](patches/) | Patch definitions, overlays, and finished PDFs |
-| [`.agents/skills/moduleur-patches/`](.agents/skills/moduleur-patches/) | Shared patch-authoring skill |
-| [`downloads/`](downloads/) | Local firmware and official patch sheets |
-| [`upstream/`](upstream/) | Local clones of official source repositories |
+## Firmware and source
 
-## Local Shmoergh resources
-
-Download the currently linked firmware and patch sheets, or verify the existing
-collection:
+[Download firmware and blank patch sheets](downloads/README.md):
 
 ```sh
 ./downloads/refresh.sh
-./downloads/refresh.sh --verify
 ```
 
-See [downloads/README.md](downloads/README.md) for supported platforms, source
-URLs, preservation behavior, and recovery details. Existing files are retained
-when the Shmoergh site is unavailable.
-
-Official source repositories can be refreshed with:
+[Refresh the official source repositories](upstream/README.md):
 
 ```sh
 ./upstream/refresh.sh
 ```
 
-See [upstream/README.md](upstream/README.md) for the repository list and refresh
-behavior. The `hog` repository is intentionally excluded.
+Existing downloads stay available if the Shmoergh site goes offline.
