@@ -1,6 +1,7 @@
 # Patch something strange
 
-Start with a storm or a conversation, then follow your ears.
+Start with a bass groove, a storm, or a conversation, then follow your ears.
+[Bass Melody](bass-melody/patch.pdf) brings a weighty saw-and-sub pulse;
 [Alien Winds](alien-winds/patch.pdf) breathes and whistles;
 [Alien Thunder](alien-thunder/patch.pdf) cracks and rumbles;
 [Autonomous Argumentative](autonomous-argumentative/patch.pdf) chirps back at itself.

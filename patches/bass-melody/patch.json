@@ -1,0 +1,417 @@
+{
+  "schema_version": 1,
+  "id": "bass-melody",
+  "title": "Bass Melody",
+  "revision": "1",
+  "status": "auditioned",
+  "summary": "A weighty sequenced saw-and-sub bass with a short filter bite and a restrained melodic range.",
+  "brain": {
+    "firmware": "Le Controlleur",
+    "version": "unknown",
+    "mode": "Sequencer",
+    "layout": "three-knobs-two-buttons",
+    "settings": [
+      "X/Y/Z are the upper knobs, left to right: X 35% tempo, Y 10% octave range, Z 20% randomness. Press A to run.",
+      "Use internal clock. Scale, sequence length, swing and transpose were not recorded; the exact melody may differ."
+    ]
+  },
+  "description": {
+    "sound": [
+      "A low saw carries the melody while its sub adds weight. Each short gate opens the amplitude envelope and pushes the filter into a compact, rounded bite."
+    ],
+    "setup": [
+      "Connect the seven instrument cables and headphones. Leave ENV/VCA 1 CONTROL empty: the internal envelope connection opens the VCA.",
+      "Start with output volume low. Select Sequencer mode, set Brain X/Y/Z, and press A. Tune VCO 1 into the bass range while it plays.",
+      "Brain X 35%, Y 10%, Z 20% and Mixer IN3 35% are confirmed settings. Other percentages are starting points; adjust by ear."
+    ],
+    "play": [
+      "Use Brain X for tempo. Keep Y near 10% for a compact bass register; a large range can throw the line into high notes.",
+      "Balance Mixer IN3 against IN1 for sub weight. Sweep Filter CV1 LEVEL around 55-65% to move from a tight thump to a short \"ow\"."
+    ],
+    "variations": [
+      "Shorten ENV1 RELEASE for clipped notes, or raise it toward 25% for longer tails. Short Brain gates make release especially useful.",
+      "Sweep cutoff around 30-50% for brightness. Add resonance gradually for more squelch; reduce it if a high whistle dominates."
+    ]
+  },
+  "normalled_policy": "VCO 1 OUT -> Mixer IN1 and ENV/VCA 1 ENV OUT -> CONTROL remain internally connected. Mixer IN2 and IN4 are at zero; Filter CV2 is centered. Explicit audio cables connect mixer, filter, VCA and output.",
+  "external": {
+    "external.headphones": {
+      "label": "Stereo headphones",
+      "direction": "in",
+      "x": 522,
+      "y": 852
+    }
+  },
+  "connections": [
+    {
+      "id": "1",
+      "from": "brain.out1",
+      "to": "vco1.pitch",
+      "kind": "cable",
+      "signal": "pitch",
+      "via": [
+        [
+          598,
+          771.5
+        ],
+        [
+          598,
+          824
+        ],
+        [
+          31,
+          824
+        ],
+        [
+          31,
+          408.5
+        ]
+      ],
+      "label_at": [
+        31,
+        500
+      ]
+    },
+    {
+      "id": "2",
+      "from": "brain.pulse",
+      "to": "env1.gate",
+      "kind": "cable",
+      "signal": "gate",
+      "via": [
+        [
+          704,
+          832
+        ],
+        [
+          51,
+          832
+        ],
+        [
+          51,
+          703.5
+        ]
+      ],
+      "label_at": [
+        380,
+        832
+      ]
+    },
+    {
+      "id": "3",
+      "from": "env1.env",
+      "to": "filter.cv1",
+      "kind": "cable",
+      "signal": "cv",
+      "via": [
+        [
+          184,
+          703.5
+        ],
+        [
+          184,
+          475
+        ],
+        [
+          658.5,
+          475
+        ],
+        [
+          658.5,
+          340.4
+        ]
+      ],
+      "label_at": [
+        420,
+        475
+      ]
+    },
+    {
+      "id": "4",
+      "from": "vco1.sub",
+      "to": "mixer.in3",
+      "kind": "cable",
+      "signal": "audio",
+      "via": [
+        [
+          113.5,
+          408.5
+        ],
+        [
+          113.5,
+          465
+        ],
+        [
+          522,
+          465
+        ],
+        [
+          522,
+          408.5
+        ]
+      ],
+      "label_at": [
+        325,
+        465
+      ]
+    },
+    {
+      "id": "5",
+      "from": "mixer.out",
+      "to": "filter.lp",
+      "kind": "cable",
+      "signal": "audio",
+      "via": [
+        [
+          560,
+          249.7
+        ],
+        [
+          560,
+          452
+        ],
+        [
+          590,
+          452
+        ],
+        [
+          590,
+          408.5
+        ]
+      ],
+      "label_at": [
+        560,
+        390
+      ]
+    },
+    {
+      "id": "6",
+      "from": "filter.out",
+      "to": "env1.in",
+      "kind": "cable",
+      "signal": "audio",
+      "via": [
+        [
+          704,
+          408.5
+        ],
+        [
+          738,
+          408.5
+        ],
+        [
+          738,
+          816
+        ],
+        [
+          68,
+          816
+        ],
+        [
+          68,
+          771.5
+        ]
+      ],
+      "label_at": [
+        738,
+        610
+      ]
+    },
+    {
+      "id": "7",
+      "from": "env1.out",
+      "to": "output.in",
+      "kind": "cable",
+      "signal": "audio",
+      "via": [
+        [
+          158.8,
+          771.5
+        ],
+        [
+          158.8,
+          790
+        ],
+        [
+          546,
+          790
+        ],
+        [
+          546,
+          703.5
+        ],
+        [
+          522,
+          703.5
+        ]
+      ],
+      "label_at": [
+        390,
+        790
+      ]
+    },
+    {
+      "id": "8",
+      "from": "output.out",
+      "to": "external.headphones",
+      "kind": "cable",
+      "signal": "audio",
+      "label_at": [
+        522,
+        836
+      ]
+    },
+    {
+      "id": "N1",
+      "from": "vco1.out",
+      "to": "mixer.in1",
+      "kind": "normal",
+      "signal": "audio",
+      "via": [
+        [
+          158.8,
+          438
+        ],
+        [
+          431,
+          438
+        ]
+      ],
+      "label_at": [
+        292,
+        438
+      ]
+    },
+    {
+      "id": "N2",
+      "from": "env1.env",
+      "to": "env1.control",
+      "kind": "normal",
+      "signal": "cv",
+      "label_at": [
+        113.5,
+        738
+      ]
+    }
+  ],
+  "controls": {
+    "vco1.wave": {
+      "value": "SAW",
+      "critical": true
+    },
+    "vco1.octave": {
+      "position": 0.18,
+      "value": "18%; low",
+      "critical": true
+    },
+    "vco1.fine": {
+      "position": 0.5,
+      "value": "50%",
+      "critical": true
+    },
+    "vco1.width": {
+      "irrelevant": "Saw selected; pulse width does not affect this waveform."
+    },
+    "mixer.level1": {
+      "position": 0.7,
+      "value": "70%",
+      "critical": true
+    },
+    "mixer.level2": {
+      "position": 0,
+      "value": "0%",
+      "critical": true
+    },
+    "mixer.level3": {
+      "position": 0.35,
+      "value": "35%",
+      "critical": true
+    },
+    "mixer.level4": {
+      "position": 0,
+      "value": "0%; unused",
+      "critical": true
+    },
+    "mixer.gain4": {
+      "irrelevant": "Input 4 is unused and its level is zero."
+    },
+    "mixer.main": {
+      "position": 0.5,
+      "value": "50%; raise gradually",
+      "critical": true
+    },
+    "mixer.threshold": {
+      "irrelevant": "No signal enters sidechain input 4, so compression is inactive."
+    },
+    "filter.resonance": {
+      "position": 0.4,
+      "value": "40%",
+      "critical": true
+    },
+    "filter.cutoff": {
+      "position": 0.3,
+      "value": "30%",
+      "critical": true
+    },
+    "filter.cv1": {
+      "position": 0.6,
+      "value": "60%",
+      "critical": true
+    },
+    "filter.cv2": {
+      "position": 0.5,
+      "value": "center / zero",
+      "critical": true
+    },
+    "env1.attack": {
+      "position": 0,
+      "value": "0%",
+      "critical": true
+    },
+    "env1.decay": {
+      "position": 0.25,
+      "value": "25%",
+      "critical": true
+    },
+    "env1.sustain": {
+      "position": 0,
+      "value": "0%",
+      "critical": true
+    },
+    "env1.release": {
+      "position": 0.1,
+      "value": "10%",
+      "critical": true
+    },
+    "output.volume": {
+      "position": 0.08,
+      "value": "8%; low",
+      "critical": true
+    },
+    "output.drive": {
+      "position": 0.25,
+      "value": "25%",
+      "critical": true
+    },
+    "brain.x": {
+      "position": 0.35,
+      "value": "35%",
+      "critical": true
+    },
+    "brain.y": {
+      "position": 0.1,
+      "value": "10%",
+      "critical": true
+    },
+    "brain.z": {
+      "position": 0.2,
+      "value": "20%",
+      "critical": true
+    }
+  },
+  "sources": [
+    "Patch: Joris Esch; github.com/jorisesch/moduleur",
+    "Firmware behavior: upstream/le-controlleur/SEQUENCER.md; installed version unknown",
+    "Instrument: shmoergh.com/guides/moduleur-user-guide/"
+  ]
+}

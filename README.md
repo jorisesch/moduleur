@@ -15,6 +15,7 @@ These patches are starting points for exploring the
 
 | Patch | What to listen for | Brain |
 | --- | --- | --- |
+| **[Bass Melody](patches/bass-melody/patch.pdf)** | A low saw-and-sub groove with a short filter bite and room to squelch. | Le Controlleur · Sequencer |
 | **[Alien Winds](patches/alien-winds/patch.pdf)** | Breathing gusts of noise. Sweep resonance to pull a singing whistle out of the wind. | Le Controlleur · Sequencer |
 | **[Alien Thunder](patches/alien-thunder/patch.pdf)** | Noise cracks over a low metallic rumble and fades through a moving filter. | Le Controlleur · Sequencer |
 | **[Autonomous Argumentative](patches/autonomous-argumentative/patch.pdf)** | Bright chirps, stepped whistles, and nervous warbles in a conversation that runs by itself. | Le Controlleur · Sequencer |
