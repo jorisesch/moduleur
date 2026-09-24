@@ -130,15 +130,15 @@
 <polyline points="522,612.5 512.7612046748872,608.6731656763491" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
 <rect x="512.9965" y="626.5" width="18.006999999999998" height="10" fill="white"/>
 <text x="522" y="632.5" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">25%</text>
-<polyline points="613,544.5 605.856071468368,536.1355343783997" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
+<polyline points="613,544.5 608.006104502865,534.698928233928" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
 <rect x="603.9965" y="559.5" width="18.006999999999998" height="10" fill="white"/>
-<text x="613" y="565.5" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">35%</text>
-<polyline points="658.5,544.5 648.0383783207533,547.8991869381244" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
-<rect x="649.4965" y="559.5" width="18.006999999999998" height="10" fill="white"/>
-<text x="658.5" y="565.5" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">10%</text>
-<polyline points="704,544.5 693.1354282534535,542.7792208845575" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
+<text x="613" y="565.5" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">40%</text>
+<polyline points="658.5,544.5 650.721825406948,552.278174593052" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
+<rect x="651.4425" y="559.5" width="14.115" height="10" fill="white"/>
+<text x="658.5" y="565.5" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">0%</text>
+<polyline points="704,544.5 704.0,533.5" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
 <rect x="694.9965" y="559.5" width="18.006999999999998" height="10" fill="white"/>
-<text x="704" y="565.5" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">20%</text>
+<text x="704" y="565.5" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">50%</text>
 <rect x="485.088" y="833" width="73.824" height="11" fill="white"/>
 <text x="522" y="840" font-family="Helvetica,Arial,sans-serif" font-size="8" fill="#152b39" text-anchor="middle">Stereo headphones</text>
 <rect x="53" y="865" width="55.012" height="12" fill="white"/>

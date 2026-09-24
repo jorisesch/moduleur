@@ -11,7 +11,7 @@
     "mode": "Sequencer",
     "layout": "three-knobs-two-buttons",
     "settings": [
-      "X/Y/Z are the upper knobs, left to right: X 35% tempo, Y 10% octave range, Z 20% randomness. Press A to run.",
+      "X/Y/Z are the upper knobs, left to right: X 40% tempo, Y 0% octave range, Z 50% randomness. Press A to run.",
       "Use internal clock. Scale, sequence length, swing and transpose were not recorded; the exact melody may differ."
     ]
   },
@@ -22,10 +22,10 @@
     "setup": [
       "Connect the seven instrument cables and headphones. Leave ENV/VCA 1 CONTROL empty: the internal envelope connection opens the VCA.",
       "Start with output volume low. Select Sequencer mode, set Brain X/Y/Z, and press A. Tune VCO 1 into the bass range while it plays.",
-      "Brain X 35%, Y 10%, Z 20%, Mixer IN3 35% and Filter CUTOFF 65% are confirmed settings. Other percentages are starting points; adjust by ear."
+      "Brain X 40%, Y 0%, Z 50%, Mixer IN3 35% and Filter CUTOFF 65% are confirmed settings. Other percentages are starting points; adjust by ear."
     ],
     "play": [
-      "Use Brain X for tempo. Keep Y near 10% for a compact bass register; a large range can throw the line into high notes.",
+      "Use Brain X for tempo. Start with Y at minimum for the narrowest octave range; raise it gradually to explore wider pitch movement.",
       "Balance Mixer IN3 against IN1 for sub weight. Sweep Filter CV1 LEVEL around 55-65% to move from a tight thump to a short \"ow\"."
     ],
     "variations": [
@@ -394,18 +394,18 @@
       "critical": true
     },
     "brain.x": {
-      "position": 0.35,
-      "value": "35%",
+      "position": 0.4,
+      "value": "40%",
       "critical": true
     },
     "brain.y": {
-      "position": 0.1,
-      "value": "10%",
+      "position": 0,
+      "value": "0%",
       "critical": true
     },
     "brain.z": {
-      "position": 0.2,
-      "value": "20%",
+      "position": 0.5,
+      "value": "50%",
       "critical": true
     }
   },
