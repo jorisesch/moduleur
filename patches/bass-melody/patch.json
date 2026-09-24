@@ -22,7 +22,7 @@
     "setup": [
       "Connect the seven instrument cables and headphones. Leave ENV/VCA 1 CONTROL empty: the internal envelope connection opens the VCA.",
       "Start with output volume low. Select Sequencer mode, set Brain X/Y/Z, and press A. Tune VCO 1 into the bass range while it plays.",
-      "Brain X 35%, Y 10%, Z 20% and Mixer IN3 35% are confirmed settings. Other percentages are starting points; adjust by ear."
+      "Brain X 35%, Y 10%, Z 20%, Mixer IN3 35% and Filter CUTOFF 65% are confirmed settings. Other percentages are starting points; adjust by ear."
     ],
     "play": [
       "Use Brain X for tempo. Keep Y near 10% for a compact bass register; a large range can throw the line into high notes.",
@@ -30,7 +30,7 @@
     ],
     "variations": [
       "Shorten ENV1 RELEASE for clipped notes, or raise it toward 25% for longer tails. Short Brain gates make release especially useful.",
-      "Sweep cutoff around 30-50% for brightness. Add resonance gradually for more squelch; reduce it if a high whistle dominates."
+      "Start cutoff at 65% and make small adjustments for brightness; lowering it too far can silence the bass. Add resonance gradually for more squelch; reduce it if a high whistle dominates."
     ]
   },
   "normalled_policy": "VCO 1 OUT -> Mixer IN1 and ENV/VCA 1 ENV OUT -> CONTROL remain internally connected. Mixer IN2 and IN4 are at zero; Filter CV2 is centered. Explicit audio cables connect mixer, filter, VCA and output.",
@@ -349,8 +349,8 @@
       "critical": true
     },
     "filter.cutoff": {
-      "position": 0.3,
-      "value": "30%",
+      "position": 0.65,
+      "value": "65%",
       "critical": true
     },
     "filter.cv1": {

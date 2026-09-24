@@ -103,9 +103,9 @@
 <polyline points="613,181.5 608.006104502865,171.69892823392794" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
 <rect x="603.9965" y="196.5" width="18.006999999999998" height="10" fill="white"/>
 <text x="613" y="202.5" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">40%</text>
-<polyline points="692.4,170 676.2196601125011,158.24429495415055" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
+<polyline points="692.4,170 705.3889609666037,154.79188068799937" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
 <rect x="683.3965" y="194" width="18.006999999999998" height="10" fill="white"/>
-<text x="692.4" y="200" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">30%</text>
+<text x="692.4" y="200" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">65%</text>
 <polyline points="658.5,249.7 663.493895497135,239.89892823392793" fill="none" stroke="#bb3d14" stroke-width="2.8"/>
 <rect x="649.4965" y="264.7" width="18.006999999999998" height="10" fill="white"/>
 <text x="658.5" y="270.7" font-family="Helvetica,Arial,sans-serif" font-size="7" fill="#bb3d14" text-anchor="middle">60%</text>
